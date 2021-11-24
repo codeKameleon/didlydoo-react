@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.App {
+  .form-section {
+    background-color: #2180D1;
+
+    h1 {
+      margin: 0;
+      padding: 1rem 0;
+      color: #fff;
+      font-size: 2rem;
+      text-align: center;
+    }
+  
+    .event-form {
+         width: 50%;
+         margin: 0 auto;
+         padding: 2rem;
+         display: flex;
+         flex-direction: column;
+  
+         & > * {
+             margin: .4rem 0;
+         }
+  
+         input, 
+         textarea {
+             border: none;
+             height: 50px;
+             padding: 0 .6rem;
+         }
+  
+         textarea {
+             padding-top: .6rem;
+             resize: vertical;
+             min-height: 50px;
+         }
+
+         .event-date-control {
+           margin-right: 1rem;
+         }
+  
+         .selected-dates {
+             display: flex;
+             flex-wrap: wrap;
+  
+             .selected-date {
+                 display: flex;
+                 align-items: center;
+                 padding: .3rem;
+                 margin: 0 .3rem .5rem 0;
+                 background-color: #fff;
+                 color: #333;
+                 border-radius: 1rem;
+             }
+  
+             .selected-date-value  {
+                 font-size: .8rem;
+             }
+  
+             .remove-date-btn {
+                 height: auto;
+                 background-color: transparent;
+                 border: none;
+                 color: crimson;
+                 font-weight: bold;
+                 margin-left: .5rem;
+             }
+         }
+  
+         button {
+             height: 50px;
+  
+             &:hover {
+                 cursor : pointer;
+             }
+         }
+     }
+  }
+}
