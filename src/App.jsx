@@ -1,8 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import AddEvent from './components/AddEvent/AddEvent'
 import './App.scss';
 
 const App = () => {
+    const [events, setEvents] = useState([])
+
     async function postEvent () {
         const data = {
             name: 'Event 1',
@@ -33,6 +35,24 @@ const App = () => {
             return err;
         }
     }
+
+    useEffect(async() => {
+        const url = `http://localhost:9000/api/events`;
+
+        try {
+            const response = await fetch(url);
+            const data = await response.json();
+            setEvents([...data])
+
+            return data;
+        } catch (err) {
+            console.log(err)
+
+            return err;
+        } 
+    },[])
+
+    console.log('events', events)
 
     return (
         <div className="App">
