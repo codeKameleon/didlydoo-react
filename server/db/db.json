@@ -1,1 +1,54 @@
-[]
+[
+  {
+    "id": "d94a77ee6907",
+    "name": "my event",
+    "author": "axel",
+    "description": "this is my event",
+    "dates": [
+      "2021-11-18"
+    ],
+    "created_at": "2021-11-24T15:16:59.135Z",
+    "num_modification": 0,
+    "last_modification": "2021-11-24T15:16:59.135Z",
+    "attendees": []
+  },
+  {
+    "id": "2f3937ae879f",
+    "name": "my event",
+    "author": "axel",
+    "description": "this is my event",
+    "dates": [
+      "2021-11-18"
+    ],
+    "created_at": "2021-11-24T15:16:54.859Z",
+    "num_modification": 0,
+    "last_modification": "2021-11-24T15:16:54.859Z",
+    "attendees": []
+  },
+  {
+    "id": "ec5160fb58a5",
+    "name": "my event",
+    "author": "axel",
+    "description": "this is my event",
+    "dates": [
+      "2021-11-18"
+    ],
+    "created_at": "2021-11-24T15:11:11.124Z",
+    "num_modification": 0,
+    "last_modification": "2021-11-24T15:11:11.124Z",
+    "attendees": []
+  },
+  {
+    "id": "f7a391dfeb9c",
+    "name": "my event",
+    "author": "axel",
+    "description": "this is my event",
+    "dates": [
+      "2021-11-18"
+    ],
+    "created_at": "2021-11-24T15:10:03.497Z",
+    "num_modification": 0,
+    "last_modification": "2021-11-24T15:10:03.497Z",
+    "attendees": []
+  }
+]
