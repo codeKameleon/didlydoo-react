@@ -1,8 +1,13 @@
 import './AddEvent.scss'
 
-const AddEvent = () => {
+const AddEvent = ({addEvent}) => {
+    const handleSubmit = e => {
+        e.preventDefault()
+        addEvent()
+    }
+
     return(
-        <form id="event-form" className="event-form" action="">
+        <form id="event-form" className="event-form">
             <input className="event-title" type="text" placeholder="Titre" required/>
             <input className="event-author" type="text" placeholder="Author" required/>
             <textarea className="event-description" type="text" placeholder="Description" required></textarea>
@@ -12,9 +17,7 @@ const AddEvent = () => {
                 <button className="event-date-btn" type="button">Ajouter date</button>
             </div>
 
-            <div className="selected-dates"></div>
-
-            <button>Ajouter un évenement</button>
+            <button onClick={handleSubmit}>Ajouter un évenement</button>
         </form>
     )
 }

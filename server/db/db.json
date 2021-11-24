@@ -1,5 +1,20 @@
 [
   {
+    "id": "d13ffd91dbc3",
+    "name": "Event 1",
+    "author": "Axel Tavormina",
+    "description": "my first event",
+    "dates": [
+      "2021-11-24",
+      "2021-11-25",
+      "2021-11-26"
+    ],
+    "created_at": "2021-11-24T11:11:07.143Z",
+    "num_modification": 0,
+    "last_modification": "2021-11-24T11:11:07.143Z",
+    "attendees": []
+  },
+  {
     "id": "5ae61f715c4a",
     "name": "sdsds",
     "author": "sdsd",
